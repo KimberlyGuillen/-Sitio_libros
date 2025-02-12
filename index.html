@@ -13,12 +13,12 @@
     <header>
       <nav class="navbar has-text-warning-light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <div class="logo-container">
-                <img src="https://images.unsplash.com/vector-1738903339967-f041ef0dba08?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmVyaWElMjBsb2dvJTIwZm9uZG8lMjBuZWdyb3xlbnwwfHwwfHx8MA%3D%3D" 
-                    alt="Logo">
-                <span class="brand-text">Librería de Luna</span>
-            </div>
-        </div>
+          <div class="logo-container">
+              <img src="https://images.unsplash.com/vector-1738903339967-f041ef0dba08?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmVyaWElMjBsb2dvJTIwZm9uZG8lMjBuZWdyb3xlbnwwfHwwfHx8MA%3D%3D" alt="Logo">
+              <span class="brand-text">Librería de Luna</span>
+          </div>
+      </div>
+      
           <!--Menú en movil-->
               <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -44,10 +44,10 @@
                   </a>
           
                   <div class="navbar-dropdown is-selected">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="categoria.html">
                       Romance
                     </a>
-                    <a class="navbar-item ">
+                    <a class="navbar-item" href="productos.html">
                       Misterio
                     </a>
                     
@@ -72,9 +72,11 @@
           
           <h1>La librería donde sale la Luna</h1>
           <p>Sumérgete en un mundo de historias</p>
-          <button class="button is-light">
-              Ver Libros
-          </button>
+          <a href="categoria.html">
+            <button class="button is-light">
+                Ver Libros
+            </button>
+        </a>      
       </div>
     </section>
 
@@ -85,7 +87,7 @@
           ">
               <div class="column is-full-mobile is-half-tablet">
                   <div class="px-4" style="margin-right: 80px;">
-                      <h2 class="is-size-4">📖 Nuestro Objetivo</h2>
+                      <h2 id="is-size-4">📖 Nuestro Objetivo</h2>
                       <p>En nuestro sitio, queremos fomentar el hábito de la lectura poniendo a tu disposición una amplia variedad de libros en formato digital. Creemos que el conocimiento y la imaginación deben ser accesibles para todos,
                          por eso ofrecemos la posibilidad de descargar libros en PDF de manera sencilla y rápida.</p>
                       <p>Explora nuestro catálogo,
