@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Librería de Luna</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/diseñogeneral.css">
 
 </head>
@@ -28,13 +27,13 @@
               </a>
             </div>
           
-            <div id="navbarBasicExample " class="navbar-menu ">
+            <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-end"> <!--Para que los link se pusieran a la derecha-->
                 <a class="navbar-item">
                   Inicio
                 </a>
           
-                <a class="navbar-item">
+                <a class="navbar-item" href="#is-size-4">
                   Objetivo
                 </a>
           
@@ -44,10 +43,10 @@
                   </a>
           
                   <div class="navbar-dropdown is-selected">
-                    <a class="navbar-item" href="categoria.html">
+                    <a class="navbar-item" href="categoria.html#romance">
                       Romance
                     </a>
-                    <a class="navbar-item" href="productos.html">
+                    <a class="navbar-item" href="categoria.html#misterio">
                       Misterio
                     </a>
                     
@@ -94,7 +93,7 @@
                         encuentra tu próxima lectura y sumérgete en nuevas historias y conocimientos. 📚</p>
                   </div>
               </div>
-              <div class="column is-full-mobile is-half-tablet mt-5 ">
+              <div class="column is-mobile is-half-tablet mt-5 ">
                   <picture>
                       <source srcset="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxpYnJvJTIwYWJpZXJ0b3xlbnwwfHwwfHx8MA%3D%3D" />
                       <img style="width: 50%;object-fit:cover;" src="https://media.istockphoto.com/id/519549364/photo/lamp.jpg?s=612x612&w=0&k=20&c=RD6SAFkjuynwepawKoQaPnyvfSz9JntZ4Tp3g3Pf_wk="
@@ -128,7 +127,7 @@
                         </div>
                         <div class="content">
                             En esta categoria se encuentran los mejores libros del genero de romance<br /> 
-                            <a href="categoria.html" class="button is-primary">Ver más</a>
+                            <a href="categoria.html#romance" class="button is-primary">Ver más</a>
                             
                         </div>
                     </div>
@@ -153,7 +152,7 @@
 
                         <div class="content">
                           En esta categoria se encuentran los mejores libros del genero de misterio.<br /> 
-                          <a href="categoria.html" class="button is-primary">Ver más</a>
+                          <a href="categoria.html#misterio" class="button is-primary">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -173,5 +172,18 @@
           </p>
       </div>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const burger = document.querySelector(".navbar-burger");
+        const menu = document.querySelector("#navbarBasicExample");
+    
+        burger.addEventListener("click", function () {
+            burger.classList.toggle("is-active");
+            menu.classList.toggle("is-active");
+        });
+    });
+    </script>
+    
 </body>
 </html>
